@@ -1,0 +1,33 @@
+{
+  "name": "showtracker",
+  "version": "1.0.0",
+  "description": "An APP to Track your favourite TV shows",
+  "main": "server.js",
+  "dependencies": {
+    "eslint": "^4.5.0"
+  },
+  "devDependencies": {
+    "eslint-config-airbnb": "^15.1.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jsx-a11y": "^5.1.1",
+    "eslint-plugin-react": "^7.3.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iidrees/showTracker.git"
+  },
+  "keywords": [
+    "Node.js",
+    "Heroku",
+    "git"
+  ],
+  "author": "Idrees",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/iidrees/showTracker/issues"
+  },
+  "homepage": "https://github.com/iidrees/showTracker#readme"
+}
