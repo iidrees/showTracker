@@ -4,7 +4,10 @@
   "description": "An APP to Track your favourite TV shows",
   "main": "server.js",
   "dependencies": {
-    "eslint": "^4.5.0"
+    "dotenv": "^4.0.0",
+    "ejs": "^2.5.7",
+    "eslint": "^4.5.0",
+    "express": "^4.15.4"
   },
   "devDependencies": {
     "eslint-config-airbnb": "^15.1.0",
@@ -13,7 +16,8 @@
     "eslint-plugin-react": "^7.3.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
