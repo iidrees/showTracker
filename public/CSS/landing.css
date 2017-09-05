@@ -1,0 +1,25 @@
+body {
+  background-color: black;
+}
+.jumbotron {
+  background-image: url('/media/images/old-tv-shows.jpg');
+  /* background-repeat: no-repeat; */
+  background-color: #2B2620;
+  background-attachment: fixed; 
+  background-position: center center;
+}
+h1, p {
+  color: white;
+}
+
+/* #signin {
+  margin-left: 440px;
+}
+*/
+
+.intro {
+  color: lightblue;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 23px;
+  font-weight: bold;
+}

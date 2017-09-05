@@ -4,6 +4,8 @@ const mondb = require('../mongodb/mongo');
 // console.log(mondb.getDb());
 // console.log(mondb.getDb().collection('names').find());
 const db = mondb.getDb().collection('test');
+console.log(db)
+/*
 db.insertOne({
   item: 'item',
   kt: 'kt',
@@ -22,4 +24,4 @@ db.insertOne({
   .then((result) => {
     console.log('inserted');
     //console.log(result);
-  });
+  }); */
