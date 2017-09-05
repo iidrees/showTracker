@@ -1,0 +1,13 @@
+body {
+  background-color: black;
+}
+.jumbotron {
+  background-image: url('/media/images/old-tv-shows.jpg');
+  /* background-repeat: no-repeat; */
+  background-color: #2B2620;
+  background-attachment: fixed; 
+  background-position: center center;
+}
+h1, p {
+  color: white;
+}
