@@ -19,6 +19,7 @@ const LocalStrategy = require('passport-local').Strategy;
 
 
 
+
 // initialise express
 const app = express();
 
@@ -71,7 +72,7 @@ mdb.connect((err) => {
   const passportAuth = require('./model/auth.js');
   helperFunction.localReg();
   app.use('/app', routes);
-  console.log(mdb.getDb(), 'this is the server');
+  // console.log(mdb.getDb(), 'this is the server');
 })
   // server 
   app.listen(port, () => {

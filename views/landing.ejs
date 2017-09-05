@@ -10,23 +10,32 @@
 
   <div class="jumbotron container">
     <h1 class="display-3">Hello, world!</h1>
-    <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+    <p class="lead">Welcome to the TV Show Tracker Application</p>
     <hr class="my-4">
-    <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-    <p class="lead">
-      <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+    <p class="lead intro">This is a TV show tracker web application that allows you to search for your favourite TV shows, view a blurb of information about the TV show and then add these shows to your favourite
+      One of the functionalities you will also be able to enjoy is the capability to either see a preview of get a link to see a trailer of the TV show and also track your favourite.
     </p>
+  
     <!-- Button trigger modal -->
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-      Launch Demo Modal
-    </button>
+    <form class="container">
+      <div class="form-group ">
+        
+          <button type="button" id="signup" class=" col-sm-4 col-sm-offset-8  lead btn btn-info" data-toggle="modal" data-target="#exampleModal" value="">
+          Sign-up Here
+          </button>
+          <button type="button" id="signin1" class="col-sm-4 col-sm-offset-8 lead btn btn-info" data-toggle="modal" data-target="#sign-in">
+          Please Sign-in Here
+          </button>
+      
+      </div>
+    </form>
 
-    <!-- Modal -->
+    <!-- Modal/ sign-up-->
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Modal Title</h5>
+            <h5 class="modal-title" id="exampleModalLabel">Please Sign-up below:</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
@@ -47,20 +56,57 @@
             </form> <!-- End of sign-up form -->
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="submit" class="btn btn-primary">Save changes</button>
+            <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+            
           </div>
         </div>
       </div>
-    </div> <!-- End of Modal -->
+    </div> <!-- End of Modal/sign-up -->
 
-
-    <h1>Hello World</h1>
-    <p>This is so weird</p>
-    <p>This is so weird</p>
-    <p>THIs Is THE MOST aNNOYING SHIT EVER</p>
-    <p>THIs Is THE MOST aNNOYING SHIT EVER</p>
-    <p>This is so weird</p>
+    <!-- Modal/sign-in -->
+    <div id="sign-in" class="modal fade" role="dialog"  tabindex="-1" role="dialog" aria-labelledby="signinModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="signinModalLabel">Please Sign in below:</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <!-- sign-in form -->
+            <form class="form-horizontal" method='POST' action='/app/signin'>
+              <div class="form-group">
+                <label class="control-label col-sm-3" for="full_name">Full Name:</label>
+                <div class="col-sm-9">
+                  <input type="text" class="form-control" name="full_name" id="full_name" placeholder="Enter first name ">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="control-label col-sm-3" for="email">Email:</label>
+                <div class="col-sm-9">
+                  <input type="email" class="form-control" id="email" name="username" placeholder="Enter email">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="control-label col-sm-3"  for="pwd">Password: </label>
+                <div class="col-sm-9">
+                  <input type="password" class="form-control" name="password" id="password" placeholder="Enter password" >
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-offset-3 col-sm-9">
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>  
   <% include ./partials/footer %>
 </body>
